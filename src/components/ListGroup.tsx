@@ -1,8 +1,11 @@
 import { useState } from "react";
+interface Props{
+    items:string[];
+    heading:string;
+}
 
-
-function ListGroup() {
-    const items =[
+function ListGroup(props:Props) {
+    let items =[
         'NewYork',
         'L.A',
         'Nairobi',
