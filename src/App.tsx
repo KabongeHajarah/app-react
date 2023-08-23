@@ -9,8 +9,9 @@
       'Paris'
   ];
 
-    return (<div><ListGroup items={items} heading="Cities"/> </div>
+  return (
+  <div><ListGroup items={items} heading="Cities"/> </div>
 
-    )
+    );
   }
   export  default App

@@ -4,13 +4,8 @@
         heading:string;
     }
 
-    function ListGroup(props:Props) {
-        let items =[
-            'NewYork',
-            'L.A',
-            'Nairobi',
-            'Paris'
-        ];
+    function ListGroup({items, heading}:Props) {
+       
 
     //Hook
     const [selectedIndex, setSelectedIndex]=useState(-1);
@@ -21,9 +16,10 @@
     }
     //type annotation
 
+
     return (
         <>
-        <h1>This is List Group component </h1>
+        <h1>{heading} </h1>
 
         {getMessage()}
         <ul className="list-group">
