@@ -8,9 +8,12 @@
       'Nairobi',
       'Paris'
   ];
-
+  const handleSelection=(item:string)=>{
+    console.log(item);
+    
+  }
   return (
-  <div><ListGroup items={items} heading="Cities"/> </div>
+  <div><ListGroup items={items} heading="Cities" onSelection={handleSelection}/> </div>
 
     );
   }

@@ -2,9 +2,12 @@
     interface Props{
         items:string[];
         heading:string;
+
+        //(item:string)=>void
+        onSelection:(item:string)=>void;
     }
 
-    function ListGroup({items, heading}:Props) {
+    function ListGroup({items, heading, onSelection}:Props) {
        
 
     //Hook
@@ -30,6 +33,7 @@
     key={item} 
         onClick={()=>{
             setSelectedIndex(index);
+            onSelection(item)
         }}>{item}</li>)}
 
         </ul>
