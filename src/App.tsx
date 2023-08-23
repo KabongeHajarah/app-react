@@ -23,7 +23,7 @@ import Button from "./components/button";
  Hello World
 </Alert> */}
 
-<Button></Button>
+<Button>My Button</Button>
 </div>
 </>
     );
