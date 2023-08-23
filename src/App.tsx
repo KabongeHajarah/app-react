@@ -23,7 +23,7 @@ import Button from "./components/button";
  Hello World
 </Alert> */}
 
-<Button color="secondary" onClick={()=>console.log('Clicked')
+<Button onClick={()=>console.log('Clicked')
 }>My Button</Button>
 </div>
 </>
