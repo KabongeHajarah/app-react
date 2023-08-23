@@ -1,6 +1,6 @@
-  import ListGroup from "./components/ListGroup"
-import Alert from "./components/alert";
-
+import ListGroup from "./components/ListGroup"
+// import Alert from "./components/alert";
+import Button from "./components/button";
   function App (){
     let items =[
       'NewYork',
@@ -14,12 +14,16 @@ import Alert from "./components/alert";
   }
   return (
     <>
-  <div><ListGroup items={items} heading="Cities" onSelection={handleSelection}/> </div>
+  <div>
+    <ListGroup items={items} heading="Cities" onSelection={handleSelection}/> 
+   
+    </div>
 <div >
-<Alert>
+{/* <Alert>
  Hello World
-</Alert>
+</Alert> */}
 
+<Button></Button>
 </div>
 </>
     );
